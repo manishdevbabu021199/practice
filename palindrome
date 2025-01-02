@@ -1,0 +1,19 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+int main(){
+    string a  = "1001";
+    string aCopy = a;
+    reverse(a.begin(),a.end());
+    cout << a;
+    if(a == aCopy){
+        cout << "Palindrome";
+    }
+    else{
+        cout << "Not Palindrome";
+    }
+    return 0;
+}
