@@ -1,0 +1,24 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+
+int main(){
+    int a  = 25;
+    int sum = 0;
+    int k = to_string(a).length();
+    int i = 0;
+    while(i <= k){
+        int powerNumber = a % 10;
+        sum = sum + pow(powerNumber, k);
+        a = a/10;
+        i++;
+    }
+    cout << sum;
+    if(sum == a){
+        cout << "Amstrong";
+    }
+    return 0;
+}
